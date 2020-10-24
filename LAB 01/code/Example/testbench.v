@@ -1,7 +1,8 @@
 `include "muxbeh.v"
+//Change the file included to switch the mux type
 module testbench;
 reg a,b,s; wire f;
-muxbeh muxb (a,b,s,f); 
+mux mux1 (a,b,s,f); 
 initial begin
     $monitor(,$time," a=%b, b=%b, s=%b f=%b",a,b,s,f);
     #0 a=1'b0;b=1'b1;

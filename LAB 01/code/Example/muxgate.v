@@ -1,6 +1,6 @@
-`ifndef muxgate
-`define muxgate
-module muxgate (a,b,s,f);
+`ifndef mux
+`define mux
+module mux (a,b,s,f);
     input a,b,s;
     output f;
     wire c,d,e;

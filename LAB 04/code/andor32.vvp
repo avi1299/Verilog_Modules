@@ -1,0 +1,55 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x56159c108190 .scope module, "tb32bitandor" "tb32bitandor" 2 13;
+ .timescale 0 0;
+v0x56159c13c050_0 .var "IN1", 31 0;
+v0x56159c13c160_0 .var "IN2", 31 0;
+v0x56159c13c270_0 .net "OUTA", 31 0, L_0x56159c13c3e0;  1 drivers
+v0x56159c13c310_0 .net "OUTO", 31 0, L_0x56159c13c5b0;  1 drivers
+S_0x56159c128a20 .scope module, "a1" "bit32AND" 2 16, 2 1 0, S_0x56159c108190;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 32 "out"
+    .port_info 1 /INPUT 32 "in1"
+    .port_info 2 /INPUT 32 "in2"
+L_0x56159c13c4d0 .functor AND 32, v0x56159c13c050_0, v0x56159c13c160_0, C4<11111111111111111111111111111111>, C4<11111111111111111111111111111111>;
+v0x56159c128c40_0 .net *"_s2", 31 0, L_0x56159c13c4d0;  1 drivers
+v0x56159c13b720_0 .net "in1", 31 0, v0x56159c13c050_0;  1 drivers
+v0x56159c13b800_0 .net "in2", 31 0, v0x56159c13c160_0;  1 drivers
+v0x56159c13b8c0_0 .net "out", 31 0, L_0x56159c13c3e0;  alias, 1 drivers
+L_0x56159c13c3e0 .part L_0x56159c13c4d0, 0, 32;
+S_0x56159c13ba20 .scope module, "o1" "bit32OR" 2 17, 2 7 0, S_0x56159c108190;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 32 "out"
+    .port_info 1 /INPUT 32 "in1"
+    .port_info 2 /INPUT 32 "in2"
+L_0x56159c13c6a0 .functor OR 32, v0x56159c13c050_0, v0x56159c13c160_0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0x56159c13bc40_0 .net *"_s2", 31 0, L_0x56159c13c6a0;  1 drivers
+v0x56159c13bd40_0 .net "in1", 31 0, v0x56159c13c050_0;  alias, 1 drivers
+v0x56159c13be30_0 .net "in2", 31 0, v0x56159c13c160_0;  alias, 1 drivers
+v0x56159c13bf30_0 .net "out", 31 0, L_0x56159c13c5b0;  alias, 1 drivers
+L_0x56159c13c5b0 .part L_0x56159c13c6a0, 0, 32;
+    .scope S_0x56159c108190;
+T_0 ;
+    %vpi_call 2 20 "$monitor", " ", $time, " IN1=%h IN2=%h AND=%h OR=%h", v0x56159c13c050_0, v0x56159c13c160_0, v0x56159c13c270_0, v0x56159c13c310_0 {0 0 0};
+    %pushi/vec4 42405, 0, 32;
+    %store/vec4 v0x56159c13c050_0, 0, 32;
+    %pushi/vec4 23130, 0, 32;
+    %store/vec4 v0x56159c13c160_0, 0, 32;
+    %delay 10, 0;
+    %pushi/vec4 23130, 0, 32;
+    %store/vec4 v0x56159c13c050_0, 0, 32;
+    %delay 20, 0;
+    %vpi_call 2 24 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "andor32.v";

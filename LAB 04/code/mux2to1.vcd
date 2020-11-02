@@ -1,0 +1,327 @@
+$date
+	Mon Nov  2 09:42:39 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module bit8_2to1mux_without_for $end
+$var wire 8 ! in1 [7:0] $end
+$var wire 8 " in2 [7:0] $end
+$var wire 1 # sel $end
+$var wire 8 $ out [7:0] $end
+$scope module m0 $end
+$var wire 1 % a1 $end
+$var wire 1 & a2 $end
+$var wire 1 ' in1 $end
+$var wire 1 ( in2 $end
+$var wire 1 ) not_sel $end
+$var wire 1 * out $end
+$var wire 1 # sel $end
+$upscope $end
+$scope module m1 $end
+$var wire 1 + a1 $end
+$var wire 1 , a2 $end
+$var wire 1 - in1 $end
+$var wire 1 . in2 $end
+$var wire 1 / not_sel $end
+$var wire 1 0 out $end
+$var wire 1 # sel $end
+$upscope $end
+$scope module m2 $end
+$var wire 1 1 a1 $end
+$var wire 1 2 a2 $end
+$var wire 1 3 in1 $end
+$var wire 1 4 in2 $end
+$var wire 1 5 not_sel $end
+$var wire 1 6 out $end
+$var wire 1 # sel $end
+$upscope $end
+$scope module m3 $end
+$var wire 1 7 a1 $end
+$var wire 1 8 a2 $end
+$var wire 1 9 in1 $end
+$var wire 1 : in2 $end
+$var wire 1 ; not_sel $end
+$var wire 1 < out $end
+$var wire 1 # sel $end
+$upscope $end
+$scope module m4 $end
+$var wire 1 = a1 $end
+$var wire 1 > a2 $end
+$var wire 1 ? in1 $end
+$var wire 1 @ in2 $end
+$var wire 1 A not_sel $end
+$var wire 1 B out $end
+$var wire 1 # sel $end
+$upscope $end
+$scope module m5 $end
+$var wire 1 C a1 $end
+$var wire 1 D a2 $end
+$var wire 1 E in1 $end
+$var wire 1 F in2 $end
+$var wire 1 G not_sel $end
+$var wire 1 H out $end
+$var wire 1 # sel $end
+$upscope $end
+$scope module m6 $end
+$var wire 1 I a1 $end
+$var wire 1 J a2 $end
+$var wire 1 K in1 $end
+$var wire 1 L in2 $end
+$var wire 1 M not_sel $end
+$var wire 1 N out $end
+$var wire 1 # sel $end
+$upscope $end
+$scope module m7 $end
+$var wire 1 O a1 $end
+$var wire 1 P a2 $end
+$var wire 1 Q in1 $end
+$var wire 1 R in2 $end
+$var wire 1 S not_sel $end
+$var wire 1 T out $end
+$var wire 1 # sel $end
+$upscope $end
+$upscope $end
+$scope module tb_8bit2to1mux $end
+$var wire 8 U out [7:0] $end
+$var reg 8 V INP1 [7:0] $end
+$var reg 8 W INP2 [7:0] $end
+$var reg 1 X SEL $end
+$scope module M1 $end
+$var wire 8 Y in1 [7:0] $end
+$var wire 8 Z in2 [7:0] $end
+$var wire 1 X sel $end
+$var wire 8 [ out [7:0] $end
+$scope begin mux_loop[0] $end
+$scope module m1 $end
+$var wire 1 \ a1 $end
+$var wire 1 ] a2 $end
+$var wire 1 ^ in1 $end
+$var wire 1 _ in2 $end
+$var wire 1 ` not_sel $end
+$var wire 1 a out $end
+$var wire 1 X sel $end
+$upscope $end
+$upscope $end
+$scope begin mux_loop[1] $end
+$scope module m1 $end
+$var wire 1 b a1 $end
+$var wire 1 c a2 $end
+$var wire 1 d in1 $end
+$var wire 1 e in2 $end
+$var wire 1 f not_sel $end
+$var wire 1 g out $end
+$var wire 1 X sel $end
+$upscope $end
+$upscope $end
+$scope begin mux_loop[2] $end
+$scope module m1 $end
+$var wire 1 h a1 $end
+$var wire 1 i a2 $end
+$var wire 1 j in1 $end
+$var wire 1 k in2 $end
+$var wire 1 l not_sel $end
+$var wire 1 m out $end
+$var wire 1 X sel $end
+$upscope $end
+$upscope $end
+$scope begin mux_loop[3] $end
+$scope module m1 $end
+$var wire 1 n a1 $end
+$var wire 1 o a2 $end
+$var wire 1 p in1 $end
+$var wire 1 q in2 $end
+$var wire 1 r not_sel $end
+$var wire 1 s out $end
+$var wire 1 X sel $end
+$upscope $end
+$upscope $end
+$scope begin mux_loop[4] $end
+$scope module m1 $end
+$var wire 1 t a1 $end
+$var wire 1 u a2 $end
+$var wire 1 v in1 $end
+$var wire 1 w in2 $end
+$var wire 1 x not_sel $end
+$var wire 1 y out $end
+$var wire 1 X sel $end
+$upscope $end
+$upscope $end
+$scope begin mux_loop[5] $end
+$scope module m1 $end
+$var wire 1 z a1 $end
+$var wire 1 { a2 $end
+$var wire 1 | in1 $end
+$var wire 1 } in2 $end
+$var wire 1 ~ not_sel $end
+$var wire 1 !" out $end
+$var wire 1 X sel $end
+$upscope $end
+$upscope $end
+$scope begin mux_loop[6] $end
+$scope module m1 $end
+$var wire 1 "" a1 $end
+$var wire 1 #" a2 $end
+$var wire 1 $" in1 $end
+$var wire 1 %" in2 $end
+$var wire 1 &" not_sel $end
+$var wire 1 '" out $end
+$var wire 1 X sel $end
+$upscope $end
+$upscope $end
+$scope begin mux_loop[7] $end
+$scope module m1 $end
+$var wire 1 (" a1 $end
+$var wire 1 )" a2 $end
+$var wire 1 *" in1 $end
+$var wire 1 +" in2 $end
+$var wire 1 ," not_sel $end
+$var wire 1 -" out $end
+$var wire 1 X sel $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1-"
+1,"
+0+"
+1*"
+1)"
+0("
+0'"
+1&"
+1%"
+0$"
+0#"
+0""
+1!"
+1~
+0}
+1|
+1{
+0z
+0y
+1x
+1w
+0v
+0u
+0t
+1s
+1r
+0q
+1p
+1o
+0n
+0m
+1l
+1k
+0j
+0i
+0h
+1g
+1f
+0e
+1d
+1c
+0b
+0a
+1`
+1_
+0^
+0]
+0\
+b10101010 [
+b1010101 Z
+b10101010 Y
+0X
+b1010101 W
+b10101010 V
+b10101010 U
+xT
+zS
+zR
+zQ
+xP
+xO
+xN
+zM
+zL
+zK
+xJ
+xI
+xH
+zG
+zF
+zE
+xD
+xC
+xB
+zA
+z@
+z?
+x>
+x=
+x<
+z;
+z:
+z9
+x8
+x7
+x6
+z5
+z4
+z3
+x2
+x1
+x0
+z/
+z.
+z-
+x,
+x+
+x*
+z)
+z(
+z'
+x&
+x%
+bx $
+z#
+bz "
+bz !
+$end
+#10
+0g
+0s
+0!"
+0-"
+1a
+0c
+1m
+0o
+1y
+0{
+b1010101 U
+b1010101 [
+1'"
+0)"
+0`
+1\
+0f
+0l
+1h
+0r
+0x
+1t
+0~
+0&"
+1""
+0,"
+1X
+#20
